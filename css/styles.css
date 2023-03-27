@@ -759,7 +759,7 @@ a:hover {
 #Panel{
 	text-align: start;
 	margin-top: 10px;
-	padding: 50px;
+	padding: 30px 25px;
 	display: none;
 	background-color: #f0f0f0d7;
 	border: solid 1px #0195b4;
@@ -771,9 +771,9 @@ a:hover {
 }
 
 .number-tnc{
-	margin-top: 10px;
+	margin-top: 8px;
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 15px;
 }
 
 

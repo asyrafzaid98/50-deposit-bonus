@@ -775,6 +775,12 @@ a:hover {
   }
   /* end of header */
 
+  /* Testimonial*/
+
+  .cards-2 .col-lg-12{
+	width: 70%;
+	margin: 0 auto;
+  }
 }
 /* end of min-width 768px */
 

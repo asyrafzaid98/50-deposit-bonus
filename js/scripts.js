@@ -1,6 +1,7 @@
 /* Description: Custom JS file */
 // Load jQuery library from a CDN (Content Delivery Network)
-import $ from 'jQuery';
+import $ from "jQuery";
+
 
 /* Navigation*/
 // Collapse the navbar by adding the top-nav-collapse class
@@ -112,10 +113,10 @@ var imageSlider = new Swiper(".image-slider", {
 });
 
 /* Invitation */
-$(document).ready(function(){
-	$("#SlideButton").click(function(){
-		$("#Panel").slideToggle("slow");
-	});
+$(document).ready(function () {
+  $("#SlideButton").click(function () {
+    $("#Panel").slideToggle("slow");
+  });
 });
 
 /* Back To Top Button */

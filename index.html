@@ -42,56 +42,26 @@
                 $("#Panel").slideToggle("slow");
             });
         });
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+       
     </script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarExample">
-
-    <!-- Navigation -->
-    <!-- <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-            <div class="container">
-
-                
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
-
-
-                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#details">Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                                <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <span class="nav-item">
-                        <a class="btn-solid-sm" href="#contact">Get quote</a>
-                    </span>
-                </div> 
-            </div> 
-        </nav>  -->
-    <!-- end of navigation -->
-
+<body data-bs-spy="scroll" data-bs-target="#navbarExample" onload="document.getElementById('defaultOpen').click();">
 
     <!-- Header -->
     <header id="header" class="header">
@@ -177,52 +147,6 @@
     </div> <!-- end of cards-1 -->
     <!-- end of services -->
 
-
-    <!-- Details 1 -->
-    <!-- <div id="details" class="basic-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-7">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/details-1.png" alt="alternative">
-                        </div> 
-                    <div class="col-lg-6 col-xl-5">
-                        <div class="text-container">
-                            <div class="section-title">WHAT WE DO</div>
-                            <h2>The right influencer can boost your conversion</h2>
-                            <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
-                            <a class="btn-solid-reg" href="#contact">Get quote</a>
-                        </div>
-                    </div> 
-                </div> 
-            </div> 
-        </div>  -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details 2 -->
-    <!-- <div class="basic-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-5">
-                        <div class="text-container">
-                            <div class="section-title">ABOUT US</div>
-                            <h2>We have ten years experience in marketing</h2>
-                            <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
-                            <a class="btn-outline-reg" href="article.html">Details</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-7">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/details-2.png" alt="alternative">
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
-        </div>  -->
-    <!-- end of details 2 -->
-
-
     <!-- Features -->
     <div id="features" class="accordion-1">
         <div class="container">
@@ -291,22 +215,6 @@
                         </div> <!-- end of accordion-item -->
                         <!-- end of accordion-item -->
 
-                        <!-- Accordion Item -->
-                        <!-- <div class="accordion-item">
-                                <div class="accordion-icon orange">
-                                    <span class="fas fa-tools"></span>
-                                </div>
-                                <div class="accordion-header" id="headingFour">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Evaluate the campaign and adjust
-                                    </button>
-                                </div> 
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                                </div> 
-                            </div>  -->
-                        <!-- end of accordion-item -->
-
                     </div> <!-- end of accordion -->
                 </div> <!-- end of col -->
                 <div class="col-xl-7">
@@ -328,7 +236,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Trade More and Get Profit More with Our Bonus!</h2>
+                    <h2 class="h2-heading">Trade More and Get Profit with Our Bonus!</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -359,55 +267,21 @@
                         <div class="gradient-floor blue-to-purple"></div>
                     </div>
                     <!-- end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                            <img class="quotes" src="images/quotes.svg" alt="alternative">
-                            <div class="card-body">
-                                <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                                <div class="testimonial-author">Bill McKenzie</div>
-                                <div class="occupation">General Manager, Presentop</div>
-                            </div>
-                            <div class="gradient-floor purple-to-green"></div>
-                        </div> -->
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                            <img class="quotes" src="images/quotes.svg" alt="alternative">
-                            <div class="card-body">
-                                <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                                <div class="testimonial-author">Vanya Dropper</div>
-                                <div class="occupation">General Manager, Presentop</div>
-                            </div>
-                            <div class="gradient-floor red-to-blue"></div>
-                        </div> -->
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                            <img class="quotes" src="images/quotes.svg" alt="alternative">
-                            <div class="card-body">
-                                <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                                <div class="testimonial-author">Lefty Brown</div>
-                                <div class="occupation">General Manager, Presentop</div>
-                            </div>
-                            <div class="gradient-floor blue-to-purple"></div>
-                        </div> -->
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                            <img class="quotes" src="images/quotes.svg" alt="alternative">
-                            <div class="card-body">
-                                <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                                <div class="testimonial-author">Susane Blake</div>
-                                <div class="occupation">General Manager, Presentop</div>
-                            </div>
-                            <div class="gradient-floor purple-to-green"></div>
-                        </div> -->
-                    <!-- end of card -->
-
+                    <div class="tabs">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'London')" id="defaultOpen">Without
+                                Bonus</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">50% Bonus</button>
+                        </div>
+    
+                        <div id="London" class="tabcontent">
+                            <img class="chart" src="https://assets.codepen.io/t-6595/UI+C-01.png">
+                        </div>
+    
+                        <div id="Paris" class="tabcontent">
+                            <img class="chart" src="https://assets.codepen.io/t-6595/UI+C-02.png">
+                        </div>
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -433,34 +307,43 @@
                                 The Bonus is available to all real accounts.
                             </li>
                             <li class="number-tnc">
-                                The bonus cannot be added to internal transfer deposits and to deposits from contests/promotions, etc. unless stated otherwise.
+                                The bonus cannot be added to internal transfer deposits and to deposits from
+                                contests/promotions, etc. unless stated otherwise.
                             </li>
                             <li class="number-tnc">
                                 Clients are required to make a minimum deposit of 15 USD to be eligible for the Bonus.
                             </li>
                             <li class="number-tnc">
-                                If the client&#39;s own funds are withdrawn after the bonus has been claimed, the bonus will be canceled. E.g. If you deposit $100 to your account, receive $50 bonus and then withdraw $100, bonus will be cancelled. 
+                                If the client&#39;s own funds are withdrawn after the bonus has been claimed, the bonus
+                                will be canceled. E.g. If you deposit $100 to your account, receive $50 bonus and then
+                                withdraw $100, bonus will be cancelled.
                             </li>
                             <li class="number-tnc">
                                 The maximum bonus claimable under this deposit is 1,000 USD.
                             </li>
                             <li class="number-tnc">
-                                The Bonus Credit redeemed from deposits made under this promotion will support Floating Margin.
+                                The Bonus Credit redeemed from deposits made under this promotion will support Floating
+                                Margin.
                             </li>
                             <li class="number-tnc">
-                                However, if the balance becomes negative with all trades closed due to stopout or clients action, negative balance protection will reset all the credit and balance to 0.
+                                However, if the balance becomes negative with all trades closed due to stopout or
+                                clients action, negative balance protection will reset all the credit and balance to 0.
                             </li>
                             <li class="number-tnc">
-                                Bold Prime reserves the right to terminate a client&#39;s incentive at any time without notice.
+                                Bold Prime reserves the right to terminate a client&#39;s incentive at any time without
+                                notice.
                             </li>
                             <li class="number-tnc">
-                                Bold Prime has the right to reject a client&#39;s bonus application(s) / contest participation(s) at any time without prior notice or explanation.
+                                Bold Prime has the right to reject a client&#39;s bonus application(s) / contest
+                                participation(s) at any time without prior notice or explanation.
                             </li>
                             <li class="number-tnc">
-                                Bold Prime reserves the right to change, update or cancel this promotion with no prior notifications.
+                                Bold Prime reserves the right to change, update or cancel this promotion with no prior
+                                notifications.
                             </li>
                             <li class="number-tnc">
-                                Any situation not described in these rules shall be subject to the Company&#39;s decision.
+                                Any situation not described in these rules shall be subject to the Company&#39;s
+                                decision.
                             </li>
                         </ol>
                     </div> <!-- end of text-container -->

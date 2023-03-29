@@ -708,7 +708,7 @@ a:hover {
 }
 
 .basic-3 h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 0px;
   color: #ffffff;
 }
@@ -729,11 +729,17 @@ a:hover {
   color: #ffffff;
 }
 
+.arrow{
+	color: white;
+	margin-left: 10px;
+}
+
 #SlideButton {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: #4fbfa5e0;
-  border: solid 1px #0195b4;
+  background-color: transparent;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -780,6 +786,11 @@ a:hover {
   .cards-2 .col-lg-12{
 	width: 70%;
 	margin: 0 auto;
+  }
+
+  /* Invitation */
+  .basic-3 .container{
+	width: 80%;
   }
 }
 /* end of min-width 768px */

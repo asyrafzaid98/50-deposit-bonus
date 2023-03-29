@@ -32,6 +32,8 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/34e21fcb60.js" crossorigin="anonymous"></script>
+
 
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -42,6 +44,7 @@
                 $("#Panel").slideToggle("slow");
             });
         });
+
 
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
@@ -57,7 +60,7 @@
             evt.currentTarget.className += " active";
         }
 
-       
+
     </script>
 </head>
 
@@ -273,11 +276,11 @@
                                 Bonus</button>
                             <button class="tablinks" onclick="openCity(event, 'Paris')">50% Bonus</button>
                         </div>
-    
+
                         <div id="London" class="tabcontent">
                             <img class="chart" src="https://assets.codepen.io/t-6595/UI+C-01.png">
                         </div>
-    
+
                         <div id="Paris" class="tabcontent">
                             <img class="chart" src="https://assets.codepen.io/t-6595/UI+C-02.png">
                         </div>
@@ -294,57 +297,70 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2 id="SlideButton">Terms & Condition</h2>
-                        <!-- <a class="btn-solid-lg" >Click To Show</a> -->
+                        <h2 id="SlideButton">Terms & Condition<span class="arrow"> <i class="fa-solid fa-chevron-down"></i> </span></h2>
+                        
                         <ol class="list-tnc" id="Panel">
-                            <li class="number-tnc">
-                                The 50% Promotions will begin on 6th February 2023 (00:00 GMT+8) to further notice.
-                            </li>
-                            <li class="number-tnc">
-                                The Bonus is available for all Bold Prime clients.
-                            </li>
-                            <li class="number-tnc">
-                                The Bonus is available to all real accounts.
-                            </li>
-                            <li class="number-tnc">
-                                The bonus cannot be added to internal transfer deposits and to deposits from
-                                contests/promotions, etc. unless stated otherwise.
-                            </li>
-                            <li class="number-tnc">
-                                Clients are required to make a minimum deposit of 15 USD to be eligible for the Bonus.
-                            </li>
-                            <li class="number-tnc">
-                                If the client&#39;s own funds are withdrawn after the bonus has been claimed, the bonus
-                                will be canceled. E.g. If you deposit $100 to your account, receive $50 bonus and then
-                                withdraw $100, bonus will be cancelled.
-                            </li>
-                            <li class="number-tnc">
-                                The maximum bonus claimable under this deposit is 1,000 USD.
-                            </li>
-                            <li class="number-tnc">
-                                The Bonus Credit redeemed from deposits made under this promotion will support Floating
-                                Margin.
-                            </li>
-                            <li class="number-tnc">
-                                However, if the balance becomes negative with all trades closed due to stopout or
-                                clients action, negative balance protection will reset all the credit and balance to 0.
-                            </li>
-                            <li class="number-tnc">
-                                Bold Prime reserves the right to terminate a client&#39;s incentive at any time without
-                                notice.
-                            </li>
-                            <li class="number-tnc">
-                                Bold Prime has the right to reject a client&#39;s bonus application(s) / contest
-                                participation(s) at any time without prior notice or explanation.
-                            </li>
-                            <li class="number-tnc">
-                                Bold Prime reserves the right to change, update or cancel this promotion with no prior
-                                notifications.
-                            </li>
-                            <li class="number-tnc">
-                                Any situation not described in these rules shall be subject to the Company&#39;s
-                                decision.
-                            </li>
+                            <span class="text">
+
+                                <li class="number-tnc">
+                                    The 50% Promotions will begin on 6th February 2023 (00:00 GMT+8) to further notice.
+                                </li>
+                                <li class="number-tnc">
+                                    The Bonus is available for all Bold Prime clients.
+                                </li>
+                                <li class="number-tnc">
+                                    The Bonus is available to all real accounts.
+                                </li>
+                                <li class="number-tnc">
+                                    The bonus cannot be added to internal transfer deposits and to deposits from
+                                    contests/promotions, etc. unless stated otherwise.
+                                </li>
+                                <li class="number-tnc">
+                                    Clients are required to make a minimum deposit of 15 USD to be eligible for the
+                                    Bonus.
+                                </li>
+                            </span>
+                            <span class="moreText">
+                                <li class="number-tnc">
+                                    If the client&#39;s own funds are withdrawn after the bonus has been claimed, the
+                                    bonus
+                                    will be canceled. E.g. If you deposit $100 to your account, receive $50 bonus and
+                                    then
+                                    withdraw $100, bonus will be cancelled.
+                                </li>
+                                <li class="number-tnc">
+                                    The maximum bonus claimable under this deposit is 1,000 USD.
+                                </li>
+                                <li class="number-tnc">
+                                    The Bonus Credit redeemed from deposits made under this promotion will support
+                                    Floating
+                                    Margin.
+                                </li>
+                                <li class="number-tnc">
+                                    However, if the balance becomes negative with all trades closed due to stopout or
+                                    clients action, negative balance protection will reset all the credit and balance to
+                                    0.
+                                </li>
+                                <li class="number-tnc">
+                                    Bold Prime reserves the right to terminate a client&#39;s incentive at any time
+                                    without
+                                    notice.
+                                </li>
+                                <li class="number-tnc">
+                                    Bold Prime has the right to reject a client&#39;s bonus application(s) / contest
+                                    participation(s) at any time without prior notice or explanation.
+                                </li>
+                                <li class="number-tnc">
+                                    Bold Prime reserves the right to change, update or cancel this promotion with no
+                                    prior
+                                    notifications.
+                                </li>
+                                <li class="number-tnc">
+                                    Any situation not described in these rules shall be subject to the Company&#39;s
+                                    decision.
+                                </li>
+                            </span>
+                            <!-- <a class="read-more-btn">Show All</a> -->
                         </ol>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->

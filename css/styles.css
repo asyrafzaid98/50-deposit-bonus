@@ -341,7 +341,7 @@ a:hover {
 .header {
   padding-top: 8rem;
   padding-bottom: 4em;
-  background: url("../images/header-background.jpg") center center no-repeat;
+  background: url("https://assets.codepen.io/t-6595/header-background.jpg") center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -371,7 +371,7 @@ a:hover {
 /********************/
 .cards-1 {
   padding: 2rem 2rem 2.25em 2rem;
-  background-image: url(/images/details-2-background.jpg);
+  background-image: url(https://assets.codepen.io/t-6595/details-2-background.jpg);
   background-size: cover;
 }
 
@@ -473,7 +473,7 @@ a:hover {
 /********************/
 .accordion-1 {
   padding: 3.25rem 2rem 2.75rem 2rem;
-  background: url("../images/features-background.jpg") center center no-repeat;
+  background: url("https://assets.codepen.io/t-6595/features-background.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -705,7 +705,7 @@ a:hover {
 .basic-3 .text-container {
   padding: 1.5rem;
   border-radius: 28px;
-  background: url("../images/invitation-background.jpg") center center no-repeat;
+  background: url("https://assets.codepen.io/t-6595/invitation-background.jpg") center center no-repeat;
   background-size: cover;
 }
 

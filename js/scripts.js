@@ -2,17 +2,6 @@
 // Load jQuery library from a CDN (Content Delivery Network)
 import $ from "jQuery";
 
-const showAllBtn = document.querySelector(".read-more-btn");
-const text = document.querySelector(".text");
-
-showAllBtn.addEventListener("click", (e) => {
-    text.classList.toggle("show-more");
-    if (showAllBtn.innerText === "Show All") {
-        showAllBtn.innerText = "Hide";
-    } else {
-        showAllBtn.innerText = "Show All";
-    }
-});
 
 /* Navigation*/
 // Collapse the navbar by adding the top-nav-collapse class

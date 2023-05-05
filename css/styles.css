@@ -527,8 +527,9 @@ a:hover {
   background-color: #ff6c02;
 }
 
+
 .accordion-1 .accordion-icon .fas {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.25rem;
   line-height: 44px;
 }
@@ -731,6 +732,14 @@ a:hover {
   color: #ffffff;
 }
 
+.basic-3 .example{
+  display: block;
+  margin-top: 5px;
+}
+
+.basic-3 ul{
+  list-style-type: disc;
+}
 
 .arrow{
 	color: white;

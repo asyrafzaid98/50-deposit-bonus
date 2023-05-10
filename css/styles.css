@@ -341,7 +341,7 @@ a:hover {
 .header {
   padding-top: 8rem;
   padding-bottom: 4em;
-  background: url("https://assets.codepen.io/t-6595/header-background.jpg") center center no-repeat;
+  background: url("https://assets.codepen.io/t-6595/Background-website-2874-x-1300.png") center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -351,7 +351,7 @@ a:hover {
   font-size: 2.3rem;
   font-weight: 700;
   padding-top: 10px;
-  color: #79D4C9;
+  color: whitesmoke;
 }
 
 .header .title-2 {
@@ -361,7 +361,7 @@ a:hover {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
-  color: #79D4C9;
+  color: whitesmoke;
 }
 
 
@@ -376,10 +376,12 @@ a:hover {
   font-size: 1.125rem;
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
+  color: whitesmoke;
 }
 
 .header .p-large {
   margin-bottom: 2.25rem;
+  color: whitesmoke;
 }
 
 .header .image-container {
@@ -391,7 +393,7 @@ a:hover {
 /********************/
 .cards-1 {
   padding: 2rem 2rem 2.25em 2rem;
-  background-image: url(https://assets.codepen.io/t-6595/details-2-background.jpg);
+  background-image: url(https://assets.codepen.io/t-6595/background-section-2.png);
   background-size: cover;
 }
 
@@ -519,8 +521,6 @@ a:hover {
 
 .accordion-1 .accordion-icon .inner-icon{
   width: 100%;
-  position: absolute;
-  bottom: 10px;
 }
 
 
